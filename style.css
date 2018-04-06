@@ -1,0 +1,39 @@
+
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white
+}
+
+header {
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    background: #353535;
+    color: black;
+    align-self: stretch;
+    -webkit-app-region: drag;
+}
+
+#content {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background: black;
+    align-items: center;
+}
+
+.minimize, .close {
+    color: gray;
+    padding: 5px 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.close:hover, .minimize:hover  {
+    background: red;
+}
